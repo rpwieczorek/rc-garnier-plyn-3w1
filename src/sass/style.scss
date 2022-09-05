@@ -526,19 +526,13 @@ body {
         position: absolute;
         right: 380px;
         bottom: -81px;
+        animation: slideright 0.8s ease forwards;
+        animation-delay: 0.9s;
       }
     }
     .es-number1 {
       &__wrapper {
         flex-wrap: nowrap;
-      }
-      &__titleWraper{
-
-      }
-      &__title{
-      }
-      &__left {
-
       }
     }
     
