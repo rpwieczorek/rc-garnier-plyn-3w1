@@ -13,7 +13,7 @@
 $regular: 'Montserrat', sans-serif;
 $pink: #f08ab5;
 $yellow: #f7dd52;
-$pink-light: #f2e4e5;
+$pink-light: #980c75;
 $button: #f5835a;
 $primary: #f47242;
 $secondary: #f75172;
@@ -236,12 +236,7 @@ body {
     }
     &__image {
       @include img;
-    }
-    
-    &__subtitle {
-      position: relative;
-    }
-    
+    }  
   }
   .es-formula {
     margin: 20px auto 60px;
@@ -453,7 +448,7 @@ body {
       @include text;
       position: relative;
       display: inline-block;
-      padding: 16px 22px;
+      padding: 8px 22px;
       text-decoration: none;
       color: #fff;
       border-radius: 4px;
@@ -473,7 +468,7 @@ body {
         bottom: 0;
         right: 0;
         z-index: -1;
-        background-color: $yellow;
+        background-color: $pink-light;
         transition: transform 0.3s ease-in-out;
         transform: scaleX(0);
         transform-origin: left;
