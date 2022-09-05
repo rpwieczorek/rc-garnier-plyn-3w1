@@ -238,6 +238,47 @@ body {
       @include img;
     }  
   }
+  .es-micelles {
+    &__wrapper{
+      margin-top: 60px;
+      min-height: 378px;
+      background: url('../images/bg-micelles.png') no-repeat;
+      background-size: cover;
+      background-position: right;
+      display: flex;
+      align-items: center;
+    }
+    &__content{
+      max-width: 380px;
+      padding: 30px;
+      margin: 7%;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px 0px rgba(121, 115, 115, 1);
+    }
+    &__title{
+      @include text;
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-style: italic;
+      color: $pink;
+      text-align: center;
+    }
+    &__text {
+      @include text;
+      padding-top: 20px;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      & span {
+        color: $pink;
+        font-weight: 700;
+      }
+    }
+ 
+  }
   .es-formula {
     margin: 20px auto 60px;
     &__title {
