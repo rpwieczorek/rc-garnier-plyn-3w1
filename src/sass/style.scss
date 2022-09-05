@@ -13,7 +13,8 @@
 $regular: 'Montserrat', sans-serif;
 $pink: #f08ab5;
 $yellow: #f7dd52;
-$pink-light: #980c75;
+$pink-light: #f2e4e5;
+$pink-dark: #980c75;
 $button: #f5835a;
 $primary: #f47242;
 $secondary: #f75172;
@@ -479,7 +480,7 @@ body {
         bottom: 0;
         right: 0;
         z-index: -1;
-        background-color: $pink-light;
+        background-color: $pink-dark;
         transition: transform 0.3s ease-in-out;
         transform: scaleX(0);
         transform-origin: left;
