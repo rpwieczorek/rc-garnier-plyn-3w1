@@ -117,14 +117,23 @@ body {
     &__titleWraper{
       margin: 0 0 20px 0;
       max-height: 100%;
-      padding: 0 50px 10px 25px;
+      padding: 0 50px 0 25px;
       line-height: 30px;
       text-align: left;
       background: $pink;
       display: inline-block;
       clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+      & sup {
+        font-size: 10px;
+        vertical-align: top; 
+        position: relative; 
+        top: -1em;
+      }
       &--whitebg {
         background: #fff;
+        & sup {
+          top: 0.5em;
+        }
       }
       &--1 {
         width: 90%;
@@ -138,7 +147,7 @@ body {
       width: 100%;
       margin: auto;
       padding: 10px 0;
-      font-size: 25px;
+      font-size: 30px;
       font-weight: 700;
       font-style: italic;
       color: #fff;
@@ -148,7 +157,7 @@ body {
         color: $pink;
       }
       & span {
-        font-size: 50px;
+        font-size: 70px;
       }
     }
     &__right {
@@ -299,6 +308,11 @@ body {
       background-color: #fff;
       border-radius: 20px;
       box-shadow: 0px 0px 10px 0px rgba(121, 115, 115, 1);
+    }
+    &__text {
+      @include text;
+      font-size: 15px;
+      padding-top: 10px;
     }
   }
   .es-use {
